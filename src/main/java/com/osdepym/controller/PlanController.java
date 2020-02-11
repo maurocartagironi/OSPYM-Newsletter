@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.osdepym.dto.PlanSeccionDTO;
 import com.osdepym.service.PlanWebService;
 
 @Controller
@@ -23,7 +22,7 @@ public class PlanController {
 	public ModelAndView loadPlanConditions(@PathVariable(value = "idPlan") String idPlan) {
 		ModelAndView view = null;
 		try {
-			List<PlanSeccionDTO> planSectionList = service.getSeccionesByPlan(idPlan);
+			List<?> planSectionList = service.getSeccionesByPlan(idPlan);
 			view = new ModelAndView("plan");
 			view.addObject("planSectionList", planSectionList);
 		} catch(Exception e) {

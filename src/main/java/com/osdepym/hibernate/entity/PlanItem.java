@@ -16,7 +16,6 @@ public class PlanItem{
 	
 
 	private Long idPlanItem;
-	private PlanSeccion seccion;
 	private PlanItem itemPadre;
 	private String titulo;
 	private String valor;
@@ -32,14 +31,7 @@ public class PlanItem{
 		this.idPlanItem = idPlanItem;
 	}
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "ID_PLAN_SECCION")
-	public PlanSeccion getSeccion() {
-		return seccion;
-	}
-	public void setSeccion(PlanSeccion seccion) {
-		this.seccion = seccion;
-	}
+	
 	@ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "ID_ITEM_PADRE")
 	public PlanItem getItemPadre() {

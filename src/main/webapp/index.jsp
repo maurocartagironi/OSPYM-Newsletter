@@ -4,8 +4,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <html>
-	<jsp:include page="./WEB-INF/views/header.jsp" />
-  
     <body>
     <section id="hero-carousel">
         <div id="carouselHome" class="carousel slide" data-interval="1000" data-ride="carousel">
@@ -125,7 +123,5 @@
            
         </div>
     </section>
-
-	<jsp:include page="./WEB-INF/views/footer.jsp" />
   </body>
 </html>

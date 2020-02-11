@@ -5,7 +5,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
-<jsp:include page="./header.jsp" />
 <body>
     <c:if test="${!empty planSectionList}">
     	<section id="main" class="bg-gray">
@@ -45,5 +44,4 @@
 	    </section>  
 	</c:if>  
 </body>
-<jsp:include page="./footer.jsp" />
 </html>
