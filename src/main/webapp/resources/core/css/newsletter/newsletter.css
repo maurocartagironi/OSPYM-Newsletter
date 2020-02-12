@@ -1,0 +1,82 @@
+#loading, #ok, #error {
+	display: none;
+}
+.newsletter-form {
+	display: flex;
+}
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+}
+.lds-ring div {
+  	box-sizing: border-box;
+  	display: block;
+  	position: absolute;
+  	width: 16px;
+  	height: 16px;
+  	margin: 3px;
+  	border: 3px solid #aaa;
+  	border-radius: 50%;
+  	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  	border-color: #aaa transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  	animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  	animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  	0% {
+    	transform: rotate(0deg);
+  	}
+  	100% {
+    	transform: rotate(360deg);
+  	}
+}
+.check-and-error-mark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.checkmark-stem {
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: #00cc00;
+    left: 12px;
+    top: 4px;
+}
+
+.checkmark-kick {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    background-color: #00cc00;
+    left: 8px;
+    top: 13px;
+}
+.error-stem {
+	position: absolute;
+    width: 3px;
+    height: 13px;
+    background-color: red;
+    left: 12px;
+    top: 4px;
+}
+.error-kick {
+	position: absolute;
+    width: 13px;
+    height: 3px;
+    background-color: red;
+    left: 7px;
+    top: 9px;
+}
